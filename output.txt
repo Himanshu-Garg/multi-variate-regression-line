@@ -1,0 +1,29 @@
+AS PER --- MEAN ABSOLUTE ERROR IN ASCENDING ORDER IS AS FOLLOWS
+
+1 = SJR 
+2 = H-Index
+3 = Total docs (3 yrs)
+4 = Total references
+5 = Total cites
+6 = Citable docs
+7 = Cites/Doc
+8 = Reference/Doc
+
+combination  ----------  mean absolute error  ------------ mean square error 
+error for - 4 5 8  ----  [0.04963302]  ----  [0.01250396]
+error for - 4 6 8  ----  [0.0572668]  ----  [0.01621701]
+error for - 4 7 8  ----  [0.06233361]  ----  [0.01937769]
+error for - 4 5 7  ----  [0.06364095]  ----  [0.02826139]
+error for - 4 5 7 8  ----  [0.06442524]  ----  [0.02996358]
+error for - 4 7  ----  [0.08782898]  ----  [0.03829524]
+error for - 4 8  ----  [0.09597245]  ----  [0.04554588]
+error for - 8  ----  [0.10295126]  ----  [0.05241062]
+error for - 4 5  ----  [0.15413234]  ----  [0.1177382]
+error for - 4 6  ----  [0.18204987]  ----  [0.1639144]
+error for - 4  ----  [0.19554952]  ----  [0.18909038]
+error for - 4 6 7 8  ----  [0.1966801]  ----  [0.28428605]
+error for - 4 6 7  ----  [0.21902133]  ----  [0.35393233]
+error for - 4 5 6 7  ----  [0.22648527]  ----  [0.28933274]
+error for - 4 5 6 7 8  ----  [0.25104964]  ----  [0.37312803]
+error for - 4 5 6 8  ----  [0.51455294]  ----  [1.53244222]
+error for - 4 5 6  ----  [0.59949249]  ----  [2.02280404]

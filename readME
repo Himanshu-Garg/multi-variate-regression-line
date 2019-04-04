@@ -1,0 +1,44 @@
+The following are the steps to run the program - 
+
+1. Go to "merging_data (folder) -> processing.py"
+	Here, processing.py is used to process the data
+	i.e. to merge the data given in two files - IF and inputs - according the common name in both.
+
+	Also, processed_data is used to save the processed/merged data from both the files.
+
+2. Then, run "main.py" available in the root folder.
+	
+	main.py does the following - 
+	a) from given 8 inputs, first it creates all the subsets possible and does the following on each subset. 
+	b) First it separated the 80% of the processed data to work on.
+	c) Then, it creates multi-variate Regression line on the basis of the 80% of the data.
+	d) then, it finds the error on the remaining 20% of the data.
+	e) It repeats the steps from b) to d) on different 80% of the data and does the same until it found the minimum error possible for the given combination.  
+	f) Finally, it prints the minimum error of each subset to the file "output.txt".
+
+
+
+OUTPUT - 
+
+The following is the best 10 combinations which can be used to make the regression line with their mean square error and absolute error 
+
+1 = SJR 
+2 = H-Index
+3 = Total docs (3 yrs)
+4 = Total references
+5 = Total cites
+6 = Citable docs
+7 = Cites/Doc
+8 = Reference/Doc
+
+combination  ----------  mean absolute error  ------------ mean square error 
+error for - 4 5 8  ----  [0.04963302]  ----  [0.01250396]
+error for - 4 6 8  ----  [0.0572668]  ----  [0.01621701]
+error for - 4 7 8  ----  [0.06233361]  ----  [0.01937769]
+error for - 4 5 7  ----  [0.06364095]  ----  [0.02826139]
+error for - 4 5 7 8  ----  [0.06442524]  ----  [0.02996358]
+error for - 4 7  ----  [0.08782898]  ----  [0.03829524]
+error for - 4 8  ----  [0.09597245]  ----  [0.04554588]
+error for - 8  ----  [0.10295126]  ----  [0.05241062]
+error for - 4 5  ----  [0.15413234]  ----  [0.1177382]
+error for - 4 6  ----  [0.18204987]  ----  [0.1639144]
